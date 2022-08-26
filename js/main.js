@@ -74,14 +74,13 @@
 // FindEvenNumber(array, newArray);
 
 // function sumAllElements(array) {
-//     let element = 0;
-//     for (let i = 0; i < array.length; i++) {
-//         element += array[i];
-//     }
-//     alert(element);
-// }
-//
-// let array = [1, 10, 30, 32, 9, 12, 101, 99, 36, 24];
 
+let numberOne = 10;
+let numberTwo = "10";
 
-// sumAllElements(array);
+let changedNumberOne = numberOne.toString();
+let changedNumberTwo = Number(numberTwo);
+
+alert(typeof changedNumberOne);
+alert(typeof changedNumberTwo);
+
