@@ -84,18 +84,47 @@
 // alert(typeof changedNumberOne);
 // alert(typeof changedNumberTwo);
 
-function userAgeCheck() {
-    let isValid = false;
+// function userAgeCheck() {
+//     let isValid = false;
+//
+//     let askForAge = +prompt("How old are you?");
+//
+//     if (askForAge < 10) {
+//         alert("hi");
+//     } else if (askForAge >= 10 && askForAge < 18) {
+//         alert("hello");
+//     } else {
+//         alert("greetings");
+//     }
+// }
+//
+// userAgeCheck();
 
-    let askForAge = +prompt("How old are you?");
 
-    if (askForAge < 10) {
-        alert("hi");
-    } else if (askForAge >= 10 && askForAge < 18) {
-        alert("hello");
+let enteredValue = null;
+let iteration = 0
+
+function sumAllElements() {
+
+    iteration++;
+
+    let askForNumber = prompt("Enter a number");
+
+    if (askForNumber === 'exit') {
+        alert(`Result of sum is ${enteredValue}`);
+        enteredValue = null;
+        return;
+    }
+
+    if (askForNumber === null && enteredValue === null) {
+        alert(`enter number`);
+        sumAllElements();
+    } else if (askForNumber === null && enteredValue !== null) {
+        alert(`you canceled program, Result of sum is ${enteredValue}`);
     } else {
-        alert("greetings");
+        enteredValue += +askForNumber;
+        sumAllElements();
     }
 }
 
-userAgeCheck();
+sumAllElements();
