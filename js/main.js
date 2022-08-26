@@ -75,12 +75,27 @@
 
 // function sumAllElements(array) {
 
-let numberOne = 10;
-let numberTwo = "10";
+// let numberOne = 10;
+// let numberTwo = "10";
+//
+// let changedNumberOne = numberOne.toString();
+// let changedNumberTwo = Number(numberTwo);
+//
+// alert(typeof changedNumberOne);
+// alert(typeof changedNumberTwo);
 
-let changedNumberOne = numberOne.toString();
-let changedNumberTwo = Number(numberTwo);
+function userAgeCheck() {
+    let isValid = false;
 
-alert(typeof changedNumberOne);
-alert(typeof changedNumberTwo);
+    let askForAge = +prompt("How old are you?");
 
+    if (askForAge < 10) {
+        alert("hi");
+    } else if (askForAge >= 10 && askForAge < 18) {
+        alert("hello");
+    } else {
+        alert("greetings");
+    }
+}
+
+userAgeCheck();
