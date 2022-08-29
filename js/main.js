@@ -101,30 +101,65 @@
 // userAgeCheck();
 
 
-let enteredValue = null;
-let iteration = 0
+// let enteredValue = null;
+// let iteration = 0
+//
+// function sumAllElements() {
+//
+//     iteration++;
+//
+//     let askForNumber = prompt("Enter a number");
+//
+//     if (askForNumber === 'exit') {
+//         alert(`Result of sum is ${enteredValue}`);
+//         enteredValue = null;
+//         return;
+//     }
+//
+//     if (askForNumber === null && enteredValue === null) {
+//         alert(`enter number`);
+//         sumAllElements();
+//     } else if (askForNumber === null && enteredValue !== null) {
+//         alert(`you canceled program, Result of sum is ${enteredValue}`);
+//     } else {
+//         enteredValue += +askForNumber;
+//         sumAllElements();
+//     }
+// }
+//
+// sumAllElements();
 
-function sumAllElements() {
+// function computeTriangleArea(base, height) {
+//     return (base * height) / 2;
+// }
+//
+// alert(computeTriangleArea(2,9));
 
-    iteration++;
+// let array = [1, 2, 3, 4];
+// let arrayTwo = [];
+//
+// function reverserArray(array, reversedArray) {
+//     for (let i = 0; i < array.length; i++) {
+//         reversedArray.push(array[i]);
+//     }
+//     let reversedArrayResult = reversedArray.reverse();
+//     return reversedArrayResult;
+// }
+//
+// alert(reverserArray(array, arrayTwo));
 
-    let askForNumber = prompt("Enter a number");
+let array = [4, 3, 6, 10, 2];
 
-    if (askForNumber === 'exit') {
-        alert(`Result of sum is ${enteredValue}`);
-        enteredValue = null;
-        return;
+function average(array) {
+    let quantityElements = 0;
+    let arrValue = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        arrValue += array[i];
+        quantityElements++;
     }
-
-    if (askForNumber === null && enteredValue === null) {
-        alert(`enter number`);
-        sumAllElements();
-    } else if (askForNumber === null && enteredValue !== null) {
-        alert(`you canceled program, Result of sum is ${enteredValue}`);
-    } else {
-        enteredValue += +askForNumber;
-        sumAllElements();
-    }
+    let result = arrValue / quantityElements;
+    return result;
 }
 
-sumAllElements();
+alert(average(array));
