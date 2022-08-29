@@ -233,19 +233,75 @@
 // alert(bar);
 
 
+// let people = [
+//     {
+//         name: "Joe",
+//         lastName: "Johnson"
+//     },
+//     {
+//         name: "Mike",
+//         lastName: "Jameson"
+//     }
+// ];
+
+// let names = [];
+// people.forEach((val, i) =>{
+//     names.push(val.name);
+// })
+// alert(names);
+//
+// let names = people.map((val,i) => {
+//     return val.name;
+// });
+//
+// alert(names);
+
+// let array = [7, 99, 22, 34, 22, 93, 101];
+//
+// function OnlyEven(array) {
+//
+//    let evenNumberArray = [];
+//
+//    let i = 0;
+//
+//     array.forEach((val) => {
+//         if (val % 2 === 0) {
+//             evenNumberArray[i] = val;
+//             i++;
+//         }
+//     });
+//     return evenNumberArray;
+// }
+//
+// alert(OnlyEven(array));
+
+// let array = [7, 99, 22, 34, 22, 93, 101];
+//
+// let filtered = array.filter((val) => {
+//    return val > 100;
+// });
+//
+// alert(filtered);
+
 let people = [
     {
-        name: "Joe
-        lastName: "Johnson"
+        name: "Joe",
+        age: 34
     },
     {
         name: "Mike",
-        lastName: "Jameson"
+        age: 22
+    },
+    {
+        name: "Jane",
+        age: 12
     }
 ];
 
-let names = [];
-people.forEach((val, i) =>{
-    names.push(val.name);
+let filtered = people.filter((person) =>{
+    return person.age >= 18;
+}).map((person) => {
+    return person.name;
 })
-alert(names);
+
+alert(filtered);
