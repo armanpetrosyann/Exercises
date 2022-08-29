@@ -148,18 +148,104 @@
 //
 // alert(reverserArray(array, arrayTwo));
 
-let array = [4, 3, 6, 10, 2];
+// let array = [4, 3, 6, 10, 2];
+//
+// function average(array) {
+//     let quantityElements = 0;
+//     let arrValue = 0;
+//
+//     for (let i = 0; i < array.length; i++) {
+//         arrValue += array[i];
+//         quantityElements++;
+//     }
+//     let result = arrValue / quantityElements;
+//     return result;
+// }
+//
+// alert(average(array));
 
-function average(array) {
-    let quantityElements = 0;
-    let arrValue = 0;
+// Find [Min] value in the [Array]
 
-    for (let i = 0; i < array.length; i++) {
-        arrValue += array[i];
-        quantityElements++;
+// let array = [10, 9, 3, 24, 19, 29, 12];
+
+
+// Function that find [Min] valur in array
+
+// function FindMinValueInArray(array) {
+//
+//     let minValue = array[0];
+//
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] < minValue) {
+//             minValue = array[i];
+//         }
+//     }
+//     return minValue;
+// }
+
+// alert(FindMinValueInArray(array));
+
+// Function that find [Max] valur in array
+
+// function FindMaxValueInArray(array) {
+//
+//     let maxValue = array[0];
+//
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] > maxValue) {
+//             maxValue = array[i];
+//         }
+//     }
+//     return maxValue;
+// }
+//
+// alert(FindMaxValueInArray(array));
+
+// let array = [1, 10, 20, 30, 32, 55, 82, 99];
+//
+// let result = Math.min(...array);
+//
+// alert(result);
+
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+//
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] === 5) {
+//         array.splice(i, 1);
+//     }
+// }
+//
+// alert(array);
+
+// Object
+
+// let array = [5, 2, 3];
+
+
+// array.forEach((val, i) => {
+//     alert(`Number ${val} Index ${i}`);
+// });
+
+// let bar = array.map((val, i) => {
+//     return val * 2;
+// });
+//
+// alert(bar);
+
+
+let people = [
+    {
+        name: "Joe
+        lastName: "Johnson"
+    },
+    {
+        name: "Mike",
+        lastName: "Jameson"
     }
-    let result = arrValue / quantityElements;
-    return result;
-}
+];
 
-alert(average(array));
+let names = [];
+people.forEach((val, i) =>{
+    names.push(val.name);
+})
+alert(names);
