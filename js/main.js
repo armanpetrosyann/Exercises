@@ -283,25 +283,25 @@
 //
 // alert(filtered);
 
-let people = [
-    {
-        name: "Joe",
-        age: 34
-    },
-    {
-        name: "Mike",
-        age: 22
-    },
-    {
-        name: "Jane",
-        age: 12
-    }
-];
-
-let filtered = people.filter((person) =>{
-    return person.age >= 18;
-}).map((person) => {
-    return person.name;
-})
-
-alert(filtered);
+// let people = [
+//     {
+//         name: "Joe",
+//         age: 34
+//     },
+//     {
+//         name: "Mike",
+//         age: 22
+//     },
+//     {
+//         name: "Jane",
+//         age: 12
+//     }
+// ];
+//
+// let filtered = people.filter((person) =>{
+//     return person.age >= 18;
+// }).map((person) => {
+//     return person.name;
+// })
+//
+// alert(filtered);
